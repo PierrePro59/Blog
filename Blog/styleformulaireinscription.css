@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');  /* Importation de la police 'Poppins' depuis Google Fonts avec différentes épaisseurs */
+
+* {  /* Applique les styles à tous les éléments de la page */
+    margin: 0;  /* Enlève la marge par défaut de tous les éléments */
+    padding: 0;  /* Enlève le padding par défaut de tous les éléments */
+    box-sizing: border-box;  /* Modifie le modèle de boîte pour que la largeur et la hauteur incluent les bordures et le padding */
+    font-family: 'Poppins', sans-serif;  /* Définit la police Poppins comme police de base */
+}
+
+body {
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);  /* Définition d'un fond dégradé allant du bleu au violet */
+    display: flex;  /* Utilise Flexbox pour aligner les éléments à l'intérieur du corps */
+    justify-content: center;  /* Aligne horizontalement le contenu au centre */
+    align-items: center;  /* Aligne verticalement le contenu au centre */
+    height: 100vh;  /* Définit la hauteur de la fenêtre à 100% de la hauteur de la fenêtre de l'utilisateur */
+    padding: 20px;  /* Ajoute un padding de 20px autour du corps de la page */
+}
+
+.container {
+    width: 300px;  /* Définit la largeur du formulaire à 300px */
+    background: #fff;  /* Définit la couleur de fond de la boîte du formulaire en blanc */
+    padding: 20px;  /* Ajoute un padding de 20px à l'intérieur de la boîte */
+    border-radius: 112px;  /* Applique des bords arrondis très prononcés */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);  /* Ajoute une ombre portée douce autour du formulaire */
+    transition: transform 0.3s ease-in-out;  /* Ajoute une transition pour l'effet de transformation (lors du survol) */
+    margin-bottom: 40px;  /* Ajoute une marge en bas de la boîte */
+}
+
+.container:hover {
+    transform: scale(1.02);  /* Augmente légèrement la taille de la boîte lors du survol */
+}
+
+h2 {
+    font-weight: 600;  /* Définit le poids de la police du titre à 600 (gras) */
+    color: #333;  /* Définit la couleur du texte en gris foncé */
+    text-align: center;  /* Centre le texte horizontalement */
+}
+
+p {
+    color: #666;  /* Définit la couleur du texte des paragraphes en gris moyen */
+    text-align: center;  /* Centre le texte horizontalement */
+}
+
+.form-group {
+    margin-bottom: 15px;  /* Ajoute un espace de 15px sous chaque groupe de formulaire */
+    text-align: left;  /* Aligne le texte des éléments du formulaire à gauche */
+}
+
+label {
+    font-weight: 600;  /* Applique une police en gras pour les étiquettes */
+    color: #333;  /* Définit la couleur de l'étiquette en gris foncé */
+    display: block;  /* Affiche les étiquettes comme des éléments block (nouvelle ligne) */
+    margin-bottom: 5px;  /* Ajoute un petit espace en dessous de l'étiquette */
+}
+
+input {
+    width: 100%;  /* Définit la largeur des champs de saisie à 100% de leur conteneur parent */
+    max-width: 350px;  /* Définit une largeur maximale de 350px pour éviter les champs trop larges */
+    padding: 8px;  /* Ajoute du padding pour espacer le texte à l'intérieur du champ */
+    border: 2px solid #ccc;  /* Définit une bordure grise clair autour du champ */
+    border-radius: 8px;  /* Applique des coins arrondis aux champs de saisie */
+    outline: none;  /* Retire le contour par défaut lorsqu'un champ est sélectionné */
+    font-size: 14px;  /* Définit la taille de la police à 14px */
+    transition: 0.3s;  /* Ajoute une transition pour les effets de focus */
+    margin-bottom: 10px;  /* Ajoute un espace de 10px sous chaque champ */
+}
+
+input:focus {
+    border-color: #4e54c8;  /* Change la couleur de la bordure lorsque le champ est sélectionné (focus) */
+    box-shadow: 0px 0px 5px rgba(78, 84, 200, 0.5);  /* Ajoute une ombre douce autour du champ pour indiquer qu'il est sélectionné */
+}
+
+button {
+    width: 80%;  /* Définit la largeur du bouton à 80% de la largeur de son conteneur parent */
+    background: #4e54c8;  /* Définit la couleur de fond du bouton en bleu foncé */
+    color: white;  /* Définit la couleur du texte du bouton en blanc */
+    font-size: 16px;  /* Définit la taille de la police du bouton à 16px */
+    padding: 10px;  /* Ajoute du padding à l'intérieur du bouton */
+    border: none;  /* Enlève la bordure par défaut du bouton */
+    border-radius: 8px;  /* Applique des coins arrondis au bouton */
+    cursor: pointer;  /* Change le curseur en main lors du survol du bouton */
+    transition: 0.3s;  /* Ajoute une transition lors du survol du bouton */
+    margin-top: 10px;  /* Ajoute une marge de 10px en haut du bouton */
+}
+
+button:hover {
+    background: #3b41b6;  /* Change la couleur de fond du bouton lorsqu'il est survolé */
+    box-shadow: 0px 4px 10px rgba(78, 84, 200, 0.5);  /* Ajoute une ombre au bouton lors du survol */
+}
+
+.error {
+    color: red;  /* Définit la couleur du texte des messages d'erreur en rouge */
+    font-size: 13px;  /* Définit la taille de la police à 13px pour les messages d'erreur */
+    margin-top: 5px;  /* Ajoute une petite marge en haut des messages d'erreur */
+}

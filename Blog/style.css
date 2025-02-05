@@ -1,0 +1,25 @@
+body {
+    background-image: url("assets/background1.png"); /* Chemin vers votre image */
+    background-size: cover; /* Ajuste la taille de l'image */
+    background-repeat: no-repeat; /* Empêche la répétition */
+    background-position: center center; /* Centre l'image */
+    /* Optionnel: */
+    background-attachment: fixed; /* Image fixe au scroll */
+}
+.auth-buttons {
+    margin-right: -610px; /* Décale encore plus à droite */
+}
+.carousel-item img {
+    width: 100%; /* L'image occupe toute la largeur du carrousel */
+    height: 400px; /* Hauteur fixe pour toutes les images */
+    object-fit: cover; /* L'image remplit le conteneur en conservant ses proportions (peut être recadrée) */
+}
+.carousel {
+    max-width: 800px; /* Largeur maximale du carrousel */
+    margin: 0 auto; /* Centre le carrousel dans la page */
+}
+.rainbow-title {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); /* Dégradé linéaire de gauche à droite */
+    -webkit-background-clip: text; /* Permet au dégradé de se limiter au texte */
+    -webkit-text-fill-color: transparent; /* Rend le texte transparent pour laisser apparaître le dégradé */
+}

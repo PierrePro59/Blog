@@ -1,0 +1,12 @@
+body {
+    background-color: #f8f9fa;  /* Définit la couleur de fond de la page avec un gris clair (#f8f9fa) */
+}
+
+.navbar-brand {
+    font-weight: bold;  /* Définit le texte de la marque de la barre de navigation en gras */
+}
+
+.table th, .table td {
+    text-align: center;  /* Centre le texte dans les cellules des en-têtes de table (th) et des données de table (td) */
+    vertical-align: middle;  /* Aligne verticalement le contenu des cellules (th et td) au centre */
+}
